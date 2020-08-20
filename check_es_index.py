@@ -33,7 +33,7 @@ def main():
   parser.add_option('-u', '--user', dest='user', type='string', help='The user which has access to elasticsearch database')
   parser.add_option('-p', '--password', dest='password', type='string', help='Password of the user')
   parser.add_option('-i', '--index', dest='index', type='string', help='Index Name')
-  parser.add_option('-c', '--check', dest='check', choices=['store','indexing','get','search','merges','refresh','flush','warmer','query_cache','fielddata','completion','segments' 'translog','request_cache','recovery'], help='check')
+  parser.add_option('-c', '--check', dest='check', choices=['docs','store','indexing','get','search','merges','refresh','flush','warmer','query_cache','fielddata','completion','segments' 'translog','request_cache','recovery'], help='check')
   parser.add_option('-P', '--port', type=int, dest='port', default='9200', help='The port of elasticsearch database')
   parser.add_option('--ignore-sslcert', dest='ignore_sslcert', default=False, action='store_true', help='Ignore ssl certificate (default="false")')
 
