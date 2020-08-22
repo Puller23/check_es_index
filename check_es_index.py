@@ -116,7 +116,7 @@ def get_json_data(json, index, check):
     for key in json["indices"][index]["total"][check]:
       value = json["indices"][index]["total"][check][key]
       message.append("{}={}".format(key, value))
-    msg = ', '.join(map(str, message))
+    msg = ' '.join(map(str, message))
     print ("OK | " + msg)
 
 if __name__ == '__main__':
